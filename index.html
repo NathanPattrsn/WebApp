@@ -1,0 +1,61 @@
+<html>
+<head>
+  <meta name ="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Coursework2_WebApp</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+  <header>
+    <h1>Web Application Development Course Work-2 </h1>
+    <button id ="btn">Fetch information about the modules</button>
+  </header>
+
+  <div id="module-info"></div>
+
+  <br>
+
+  <form><br> <!--beginning of form-->
+    <div class="formBox">
+      <label for="title">Enter Degree</label> <!--label for degree input box-->
+      <input type="text" id="degree" placeholder="Degree"/> <!--degree input box creation-->
+    </div>
+    <div class="formBox">
+      <label for="subtitle">Enter Module</label><!--label for module input box-->
+      <input type="text" id="module" placeholder="Module"/><!--module input box made-->
+    </div>
+    <div class="formBox">
+      <button id="btn2">Click to add</button> <!--button is made-->
+    </div>
+    <div id="msg">
+      <pre></pre>
+    </div>
+    </form><!--form closed-->
+  <!--code to display calendar on webpage begins-->
+    <div id="cal-wrap">
+      <!-- (A) PERIOD SELECTOR -->
+      <div id="cal-date">
+        <select id="cal-mth"></select>
+        <select id="cal-yr"></select>
+      </div>
+    
+      <!-- (B) CALENDAR -->
+      <div id="cal-container"></div>
+    
+      <!-- (C) EVENT FORM -->
+      <form id="cal-event">
+        <h1 id="evt-head"></h1>
+        <div id="evt-date"></div>
+        <textarea id="evt-details" required></textarea>
+        <input id="evt-close" type="button" value="Close"/>
+        <input id="evt-del" type="button" value="Delete"/>
+        <input id="evt-save" type="submit" value="Save"/>
+      </form>
+    </div>
+
+    <!-- code for calendar ends-->
+    <!--Scripts are linked-->
+<script src="main.js"> </script>
+<script src="calendar.js"> </script>
+</body>
+</html>
